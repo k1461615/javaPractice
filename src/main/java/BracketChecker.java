@@ -1,11 +1,6 @@
-package main.java;
-
 import java.util.Stack;
 
-/**
- * Created by Sackman on 2017-01-20
- */
-class BracketChecker {
+public class BracketChecker {
     static boolean isMatchingBrackets(String input){
         String brackets = "(){}[]<>";
         Stack<Character> stack = new Stack<>();

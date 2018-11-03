@@ -1,5 +1,3 @@
-package main.java;
-
 public class Euler21 {
     public static void main(String args[]){
         int answer = 0;
@@ -18,7 +16,7 @@ public class Euler21 {
         System.out.println(answer);
     }
 
-    public static int d(int n){
+    static int d(int n){
         int answer = 0;
 
         for(int i=1; i<=n/2; i++){
