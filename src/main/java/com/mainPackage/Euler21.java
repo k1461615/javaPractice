@@ -1,12 +1,14 @@
+package com.mainPackage;
+
 public class Euler21 {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         int answer = 0;
 
-        for(int a = 220; a < 10000; a++){
+        for (int a = 220; a < 10000; a++) {
             int b = d(a);
             int db = d(b);
 
-            if(db == a && a != b){
+            if (db == a && a != b) {
                 System.out.println(a + " " + b);
                 answer += a + b;
                 a = b;
@@ -16,11 +18,11 @@ public class Euler21 {
         System.out.println(answer);
     }
 
-    static int d(int n){
+    static int d(int n) {
         int answer = 0;
 
-        for(int i=1; i<=n/2; i++){
-            if(n%i==0){
+        for (int i = 1; i <= n / 2; i++) {
+            if (n % i == 0) {
                 answer += i;
             }
         }

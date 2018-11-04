@@ -1,3 +1,5 @@
+package com.mainPackage;
+
 import java.util.Arrays;
 
 public class Euler22 {

@@ -1,3 +1,5 @@
+package com.mainPackage;
+
 import org.junit.Assert;
 
 public class Euler21Test {
