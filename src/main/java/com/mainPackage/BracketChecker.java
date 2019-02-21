@@ -3,20 +3,26 @@ package com.mainPackage;
 import java.util.Stack;
 
 public class BracketChecker {
+
+    private static final Bracket[] BRACKETS = new Bracket[]{
+            new Bracket('{', '}'),
+            new Bracket('[', ']'),
+            new Bracket('<', '>'),
+            new Bracket('(', ')')};
+
     static boolean isMatchingBrackets(String input) {
-        String brackets = "(){}[]<>";
-        Stack<Character> stack = new Stack<>();
+        Stack<Character> requiredClosing = new Stack<>();
         for (char c : input.toCharArray()) {
-            int pos = brackets.indexOf(c);
-            if (pos >= 0) {
-                if (pos % 2 == 0) {
-                    stack.push(brackets.charAt(pos + 1));
-                } else if (stack.isEmpty() || stack.pop() != c) {
+            for (Bracket bracket : BRACKETS) {
+                if (bracket.open == c) {
+                    requiredClosing.push(bracket.close);
+                    break;
+                } else if (bracket.close == c && (requiredClosing.isEmpty() || requiredClosing.pop() != c)) {
                     return false;
                 }
             }
         }
-        return stack.isEmpty();
+        return requiredClosing.isEmpty();
     }
 
     public static void main(String[] args) {
@@ -24,6 +30,16 @@ public class BracketChecker {
 
         for (String s : match) {
             System.out.printf("%b\n", isMatchingBrackets(s));
+        }
+    }
+
+    private static class Bracket {
+        final char open;
+        final char close;
+
+        Bracket(char open, char close) {
+            this.open = open;
+            this.close = close;
         }
     }
 }

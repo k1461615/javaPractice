@@ -1,4 +1,4 @@
-package com.mainPackage;
+package com.euler;
 
 import org.junit.Assert;
 

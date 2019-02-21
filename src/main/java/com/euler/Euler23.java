@@ -1,4 +1,4 @@
-package com.mainPackage;
+package com.euler;
 
 public class Euler23 {
     public static void main(String[] args) {
