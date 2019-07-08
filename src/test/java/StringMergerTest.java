@@ -4,7 +4,7 @@ class StringMergerTest {
 
 	@org.junit.jupiter.api.Test
 	void mergeString() {
-		StringMerger merger = new StringMerger.StringMergerImpl();
+		StringMerger merger = new StringMerger();
 
 		// intersect is at the end of a and the start of b with 1 char of overlap
 		assertEquals("abcde", merger.mergeStrings("abc", "cde"));
@@ -14,7 +14,7 @@ class StringMergerTest {
 		assertEquals("abcde", merger.mergeStrings("abcde", "bcd"));
 		// intersect is at the end of a and a contains duplication
 		assertEquals("abcdcde", merger.mergeStrings("abcdcd", "cde"));
-		// intersect is at the end of a and a contains duplication
+		// intersect is at the end of b and b contains duplication
 		assertEquals("abcde", merger.mergeStrings("cde", "abc"));
 	}
 }
