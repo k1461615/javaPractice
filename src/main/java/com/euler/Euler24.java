@@ -3,41 +3,42 @@ package com.euler;
 import java.util.ArrayList;
 
 public class Euler24 {
-    public static void main(String[] args) {
-        ArrayList<Integer> digits = new ArrayList<>();
-        digits.add(0);
-        digits.add(1);
-        digits.add(2);
-        digits.add(3);
-        digits.add(4);
-        digits.add(5);
-        digits.add(6);
-        digits.add(7);
-        digits.add(8);
-        digits.add(9);
 
-        int end = 1000000 - 1;
+  public static void main(String[] args) {
+    ArrayList<Integer> digits = new ArrayList<>();
+    digits.add(0);
+    digits.add(1);
+    digits.add(2);
+    digits.add(3);
+    digits.add(4);
+    digits.add(5);
+    digits.add(6);
+    digits.add(7);
+    digits.add(8);
+    digits.add(9);
 
-        StringBuilder answer = new StringBuilder();
+    int end = 1000000 - 1;
 
-        for (int i = digits.size() - 1; i > 0; i--) {
-            int fact = fact(i);
-            int times = end / fact;
+    StringBuilder answer = new StringBuilder();
 
-            end -= fact * times;
-            answer.append(digits.remove(times));
-        }
-        answer.append(digits.remove(0));
+    for (int i = digits.size() - 1; i > 0; i--) {
+      int fact = fact(i);
+      int times = end / fact;
 
-        System.out.println(answer);
+      end -= fact * times;
+      answer.append(digits.remove(times));
     }
+    answer.append(digits.remove(0));
 
-    private static int fact(int i) {
-        for (int j = i - 1; j > 0; j--) {
-            i *= j;
-        }
-        return i;
+    System.out.println(answer);
+  }
+
+  private static int fact(int i) {
+    for (int j = i - 1; j > 0; j--) {
+      i *= j;
     }
+    return i;
+  }
 
     /*
     1000000

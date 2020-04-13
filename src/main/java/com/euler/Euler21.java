@@ -1,32 +1,33 @@
 package com.euler;
 
 public class Euler21 {
-    public static void main(String args[]) {
-        int answer = 0;
 
-        for (int a = 220; a < 10000; a++) {
-            int b = d(a);
-            int db = d(b);
+  public static void main(String[] args) {
+    int answer = 0;
 
-            if (db == a && a != b) {
-                System.out.println(a + " " + b);
-                answer += a + b;
-                a = b;
-            }
-        }
+    for (int a = 220; a < 10000; a++) {
+      int b = d(a);
+      int db = d(b);
 
-        System.out.println(answer);
+      if (db == a && a != b) {
+        System.out.println(a + " " + b);
+        answer += a + b;
+        a = b;
+      }
     }
 
-    static int d(int n) {
-        int answer = 0;
+    System.out.println(answer);
+  }
 
-        for (int i = 1; i <= n / 2; i++) {
-            if (n % i == 0) {
-                answer += i;
-            }
-        }
+  static int d(int n) {
+    int answer = 0;
 
-        return answer;
+    for (int i = 1; i <= n / 2; i++) {
+      if (n % i == 0) {
+        answer += i;
+      }
     }
+
+    return answer;
+  }
 }
