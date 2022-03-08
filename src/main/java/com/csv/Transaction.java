@@ -7,11 +7,13 @@ public class Transaction {
   private String date;
   private String detail;
   private Double amount;
-  private String category;
-  private String categoryType;
+  private Category category;
+  private SubCategory subCategory;
 
   @Override
   public String toString() {
-    return String.format("%s,%s,%s,%s,%s", date, detail, amount, category, categoryType);
+    String c = category != null ? category.toString() : "unknown";
+    String sc = subCategory != null ? subCategory.toString() : "unknown";
+    return String.format("%s,%s,%s,%s,%s", date, detail, amount, c, sc);
   }
 }
