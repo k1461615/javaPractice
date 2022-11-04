@@ -1,0 +1,145 @@
+[
+  {
+    "label": "Entertainment",
+    "subcategories": [
+      {
+        "label": "Restaurants",
+        "patterns": [
+          "dominos",
+          "PIZZAHUT",
+          "costa",
+          "nandos",
+          "tavern",
+          "spoons",
+          "SUBWAY",
+          "UBER EATS",
+          "five guys",
+          "Greggs Plc",
+          "KFC"
+        ]
+      },
+      {
+        "label": "Games",
+        "patterns": [
+          "Steam"
+        ]
+      },
+      {
+        "label": "Tools",
+        "patterns": [
+          "CHRONOS",
+          "TOOLSTATION"
+        ]
+      },
+      {
+        "label": "Gym",
+        "patterns": [
+          "pure gym",
+          "THE GYM"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Housing",
+    "subcategories": [
+      {
+        "label": "Rent",
+        "patterns": [
+          "rent",
+          "BARCLAYS UK MTGES",
+          "mortgage",
+          "ELDERBRIDGE",
+          "MEPHAM HTB",
+          "hastings london"
+        ]
+      },
+      {
+        "label": "Furniture",
+        "patterns": [
+          "NOVUNA",
+          "Tempur",
+          "LEYLAND",
+          "Ikea"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Travel",
+    "subcategories": [
+      {
+        "label": "Rail Services",
+        "patterns": [
+          "swrailway",
+          "railcard"
+        ]
+      },
+      {
+        "label": "Other Travel",
+        "patterns": [
+          "uber trip",
+          "stgcoach",
+          "LONDON OVERGROUND SST",
+          "tfl travel"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "General Purchases",
+    "subcategories": [
+      {
+        "label": "Groceries",
+        "patterns": [
+          "waitrose",
+          "sainsbury",
+          "SANSBRY",
+          "tesco",
+          "co-op",
+          "myprotein",
+          "food shop",
+          "lidl",
+          "iceland",
+          "supermark"
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Utilities",
+    "subcategories": [
+      {
+        "label": "Electric",
+        "patterns": [
+          "electric bill"
+        ]
+      },
+      {
+        "label": "Internet",
+        "patterns": [
+          "HYPEROPTIC",
+          "internet"
+        ]
+      },
+      {
+        "label": "Water",
+        "patterns": [
+          "water bill"
+        ]
+      },
+      {
+        "label": "Phone",
+        "patterns": [
+          "h3g"
+        ]
+      },
+      {
+        "label": "Tax",
+        "patterns": [
+          "tax bill"
+        ]
+      }
+    ]
+  }
+]
