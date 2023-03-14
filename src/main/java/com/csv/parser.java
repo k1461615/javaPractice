@@ -37,7 +37,7 @@ public class parser {
     for (String fileLocation : fileLocations) {
       BufferedReader reader = new BufferedReader(new FileReader(fileLocation));
       String[] headers = reader.readLine().split(",");
-      for (String l = reader.readLine(); l != null; l = reader.readLine()) {
+      for (String l = reader.readLine(); l != null && !l.isBlank(); l = reader.readLine()) {
         String[] values = l.split(",", -1);
         transactions.add(new Transaction(headers, values));
       }

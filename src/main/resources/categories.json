@@ -5,17 +5,23 @@
       {
         "label": "Restaurants",
         "patterns": [
-          "dominos",
+          "domino",
           "PIZZAHUT",
           "costa",
           "nandos",
           "tavern",
-          "spoons",
+          "WETHERSPOON",
           "SUBWAY",
           "UBER EATS",
           "five guys",
           "Greggs Plc",
-          "KFC"
+          "KFC",
+          "Cafe",
+          "IPPUDO",
+          "TURTLE BAY",
+          "Dinner",
+          "Pizza",
+          "WAGAMAMA"
         ]
       },
       {
@@ -50,8 +56,8 @@
           "BARCLAYS UK MTGES",
           "mortgage",
           "ELDERBRIDGE",
-          "MEPHAM HTB",
-          "hastings london"
+          "HTB STO",
+          "Service Charge"
         ]
       },
       {
@@ -93,7 +99,7 @@
         "label": "Groceries",
         "patterns": [
           "waitrose",
-          "sainsbury",
+          "SAINS",
           "SANSBRY",
           "tesco",
           "co-op",
@@ -102,6 +108,19 @@
           "lidl",
           "iceland",
           "supermark"
+        ]
+      },
+      {
+        "label": "Clothes",
+        "patterns": [
+          "clarks",
+          "NEWBALANCE"
+        ]
+      },
+      {
+        "label": "Pets",
+        "patterns": [
+          "Pets Corner"
         ]
       }
     ]
@@ -113,6 +132,12 @@
         "label": "Electric",
         "patterns": [
           "electric bill"
+        ]
+      },
+      {
+        "label": "Gas",
+        "patterns": [
+          "gas bill"
         ]
       },
       {

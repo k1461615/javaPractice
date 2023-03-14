@@ -35,12 +35,15 @@ public class Transaction {
       if (!value.isEmpty()) {
         if (header.matches("Date")) {
           date = parseDate(value);
-        } else if (header.matches("Details|Description")) {
+        } else if (header.matches("Details|Description|Memo")) {
           detail = value;
         } else if (header.matches("In")) {
           amount = Double.parseDouble(value) * -1;
         } else if (header.matches("Out|Amount")) {
           amount = Double.parseDouble(value);
+          if (headers[0].equals("Number")){
+            amount = amount * -1;
+          }
         }
       }
     }
