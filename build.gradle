@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id("io.freefair.lombok") version "8.0.1"
+}
+
+group = 'blank'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = 17
+targetCompatibility = 17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.5'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.6'
+    implementation group: 'ch.qos.logback', name: 'logback-core', version: '1.4.6'
+
+    testImplementation group: 'junit', name: 'junit', version:'4.13.2'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.9.2'
+}
